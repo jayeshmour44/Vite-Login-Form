@@ -1,0 +1,113 @@
+/* --- Hamburger Button --- */
+.hamburger-btn {
+  font-size: 26px;
+  margin-right: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none; /* hide on large screens */
+  }
+}
+
+/* --- Header Main Bar --- */
+.header {
+  width: 100%;
+  padding: 18px 40px;
+  background: rgb(186 15 15);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* --- Logo Section --- */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* --- Navigation Links --- */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #d1e0ff;
+  transform: translateY(-2px);
+}
+
+/* --- Logout Button --- */
+.logout-btn {
+  background: #ff4d4d;
+  padding: 8px 18px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}
+
+.theme-btn {
+  background: #ff4d4d;
+  padding: 8px 18px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* --- Mobile Responsive --- */
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logout-btn {
+    padding: 7px 15px;
+  }
+}

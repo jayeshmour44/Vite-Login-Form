@@ -1,0 +1,83 @@
+/* Page Wrapper */
+.userinfo-container {
+  width: 100%;
+  padding: 60px; /* p-8 */
+}
+
+/* Heading */
+.userinfo-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  margin-bottom: 12px; /* mb-3 */
+}
+
+/* Form Grid */
+.userinfo-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px; /* gap-4 */
+  margin-bottom: 40px; /* mb-10 */
+}
+
+@media (min-width: 768px) {
+  .userinfo-form {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+/* Input fields */
+.userinfo-input {
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.userinfo-input:focus {
+  border-color: #2563eb; /* blue-600 */
+}
+
+/* Add Button */
+.userinfo-button {
+  background-color: #2563eb; /* blue-600 */
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  grid-column: span 1;
+}
+
+.userinfo-edit-btn, 
+.userinfo-delete-btn{
+  margin: 5px;
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .userinfo-button {
+    grid-column: span 3; /* md:col-span-3 */
+  }
+}
+
+.userinfo-button:hover {
+  background-color: #1e4fd6;
+}
+
+/* Table */
+.userinfo-table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.userinfo-table thead {
+  background-color: #e5e7eb; /* bg-gray-200 */
+}
+
+.userinfo-table th,
+.userinfo-table td {
+  padding: 8px; /* p-2 */
+  border: 1px solid #ccc;
+  text-align: center;
+}

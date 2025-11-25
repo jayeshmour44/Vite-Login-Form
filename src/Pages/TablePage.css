@@ -1,0 +1,144 @@
+.page-box {
+  width: 90%;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.page-box h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* --------------------
+   Search + Filter
+---------------------- */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.controls input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+.controls select {
+  width: 38%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* --------------------
+      TABLE
+---------------------- */
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+}
+
+.todo-table tr:hover {
+  background: #f2f7ff;
+}
+
+.completed {
+  color: green;
+  font-weight: 600;
+}
+
+.pending {
+  color: red;
+  font-weight: 600;
+}
+
+/* --------------------
+     PAGINATION
+---------------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.pagination button {
+  padding: 8px 18px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.pagination button:disabled {
+  background: #a9a9a9;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #005fcc;
+}
+
+.pagination span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* --------------------
+     RESPONSIVE
+---------------------- */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controls input,
+  .controls select {
+    width: 100%;
+  }
+
+  .todo-table th,
+  .todo-table td {
+    font-size: 14px;
+  }
+}
